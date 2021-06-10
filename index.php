@@ -1,6 +1,5 @@
-<?php
-include('includes/database_handler.php');
- ?><!DOCTYPE html>
+<?php session_start(); ?>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -22,12 +21,12 @@ include('includes/database_handler.php');
 
 	<div class="navbar">
 		<ul class="navbar-nav">
-                       <li class="nav-item">
-           		   <a class="nav-link">
-                			  <i class="fas fa-bars" onclick="collapseSidebar()"></i> 
-             			 </a>
-       			 </li> 
- 			<li class="nav-item">
+			<li class="nav-item">
+				<a class="nav-link">
+					<i class="fas fa-bars" onclick="collapseSidebar()"></i>
+				</a>
+			</li>
+			<li class="nav-item">
 				<img src="assets/LOGO.png" class="logo" alt="Logo Myteam">
 
 				</a>
@@ -92,14 +91,14 @@ include('includes/database_handler.php');
 					<span>Afficher les articles</span>
 				</a>
 			</li>
-                        <li  class="sidebar-nav-item">
-			<a href="membres.php" class="sidebar-nav-link">
-				<div>
-					<i class="fas fa-check-circle"></i>
-				</div>
-				<span>Afficher les membres</span>
-			</a>
-	           	</li>
+			<li class="sidebar-nav-item">
+				<a href="membres.php" class="sidebar-nav-link">
+					<div>
+						<i class="fas fa-check-circle"></i>
+					</div>
+					<span>Afficher les membres</span>
+				</a>
+			</li>
 		</ul>
 
 	</div>
@@ -130,7 +129,7 @@ include('includes/database_handler.php');
 									<th>Status</th>
 									<th>date d'inscription</th>
 									<th></th>
-                                      					<th>Localisation</th>
+									<th>Localisation</th>
 								</tr>
 							</thead>
 							<tbody>

@@ -1,11 +1,11 @@
 <?php
 
-$dbname = "myteam_rebuild";
+$dbname = "myteam2";
 $host = 'localhost';
 $dsn = "mysql:dbname=" . $dbname . ";host=" . $host;
 
-$user = "myteam";
-$password = "myteam";
+$user = "root";
+$password = "";
 
 try {
     $dbh = new PDO($dsn, $user, $password);
@@ -14,4 +14,3 @@ try {
     echo 'Erreur de connexion à la base de données : ' . $e->getMessage();
     die();
 }
-
